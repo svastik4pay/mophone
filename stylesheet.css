@@ -1,0 +1,4791 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Login Page */
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden !important;
+}
+
+/* Height of screen without navbar */
+.max-height {
+    height: calc(100% - 90px);
+
+}
+
+
+
+/* Padding */
+.pt30 {
+    padding-top: 30px;
+}
+
+/* font-weight */
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+/* width */
+.w80 {
+    margin: auto !important;
+    width: 80% !important;
+
+}
+
+.w85 {
+    margin: auto !important;
+    width: 85% !important;
+
+}
+
+.w90 {
+    margin: auto;
+    width: 90%;
+}
+
+.w100 {
+    width: 100% !important;
+
+}
+
+/* Height */
+
+.h100 {
+    height: 100%;
+}
+
+/* Default Colours */
+
+.primary-green {
+    color: #5FCFD4;
+}
+
+.primary-red {
+    color: #F8415D;
+
+}
+
+.primary-grey {
+    color: #343D3A;
+}
+
+.primary-grey {
+    color: #343D3A;
+}
+
+.blue-background {
+    background: #5FCFD4 !important;
+}
+
+.green-background {
+    background: #1AD8A2 !important;
+}
+
+.grey-background {
+    background: #8E8E93;
+}
+
+.blue-backgroundimg {
+    background-image: url(../images/websitebackground.jpeg);
+    background-size: cover;
+}
+
+
+/* Default Buttons */
+
+.greybutton {
+    background: #343D3A;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 15px 0 15px 0;
+    width: 100%;
+}
+
+
+.bluebutton {
+    background: #5FCFD4;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 15px 0 15px 0;
+    width: 100%;
+}
+
+
+
+/* Header logo */
+
+.header-logo {
+    height: 20px;
+}
+
+.mophonelogo-header {
+    height: 20px;
+}
+
+/* rounded boarder headers */
+
+.default-header {
+    padding-top: 60px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 123.5%;
+
+}
+
+
+/* Default settings for info pages */
+
+.short-header .text-logo {
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 38px;
+}
+
+.rounded-border {
+    position: relative;
+    background: white;
+    bottom: 2.3%;
+    border-radius: 26px 26px 0 0;
+}
+
+.padding-footer {
+    padding-bottom: 85px;
+}
+
+/* Splash Screen */
+
+.splash1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 200;
+    color: #fff;
+
+    /* text-align: center;
+    line-height: 90vh;   */
+    /* background-image: url(../images/Launch\ 2.png); */
+}
+
+
+
+.splash2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #5FCFD4;
+    z-index: 200;
+}
+
+.splash2img-container {
+    width: 90%;
+    margin: auto;
+
+}
+
+.splash2logo-container {
+    width: 80%;
+    margin: auto;
+}
+
+.splash2logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.splash2img-container img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.splashimg-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    top: 43%;
+    left: 10%;
+}
+
+.welcome-text-splash {
+    /* width: 80%;  */
+    margin: auto;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.splashimg-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.splash2-headerimg {
+    /* width: 90%;  */
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) 2s both;
+    animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) 2s both
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+/* Login Page */
+.login-page {
+    background-color: #5FCFD4;
+    padding: 0 2% 0 2%;
+}
+
+#userlogin {
+    margin-bottom: 17px;
+}
+
+#userpassword {
+    margin-bottom: 26px;
+}
+
+
+
+
+
+/* Forgot Password Page */
+
+.forgotpassword-header {
+    height: 98px;
+    width: 298px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.forgotpassword-header img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.forgotpassword-headertext {
+    margin-top: 20px;
+    letter-spacing: -0.3px;
+    /* color: black; */
+    font-size: 16px;
+}
+
+.forgotpassword-subheader {
+    letter-spacing: -0.3px;
+    font-size: 12px;
+    color: #8396A4;
+    margin-top: 10px;
+}
+
+.resetpassword-input {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #8396A4;
+    margin-top: 20px;
+}
+
+.forgetpassword-sendlink {
+    background: #343D3A;
+    ;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 270px;
+    margin-top: 70px;
+}
+
+.resetpassword-text {
+    margin-top: 100px;
+}
+
+/* Image Header CSS */
+#green-background {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+.login-header-photo {
+    padding-top: 30px;
+    /* height: 30%; */
+    text-align: center;
+    position: relative;
+
+}
+
+/* Over 400px screens */
+.phone-call-image {
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    left: 8%;
+    top: 15%;
+}
+
+#check-phone {
+    position: absolute;
+    width: 120px;
+    height: 119px;
+    left: 65%;
+    top: 65%;
+
+}
+
+#white-circle {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    left: 300px;
+    top: 81px;
+}
+
+#selfie-photo-image {
+    position: absolute;
+    /* width: 113px;
+    height: 112px; */
+    left: 235px;
+    top: 109px;
+}
+
+#green-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 111px;
+    top: 280px;
+}
+
+/* Login Text Header */
+.login-page .login-header {
+    /* text-align: center; */
+    color: white;
+    width: 75%;
+    margin: auto;
+
+}
+
+.login-page .login-header p {
+    margin-bottom: 0;
+}
+
+#welcome-text {
+    font-size: 1.5625em;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    font-weight: 300;
+}
+
+#company-text {
+    font-size: 3.51758125em;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+#company-text span {
+    color: #1AD8A2;
+}
+
+#company-text img {
+    height: 50px;
+}
+
+
+
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+    .login-header-photo {
+        padding-top: 0px;
+    }
+
+    .login-page .login-header {
+        width: 83%;
+
+    }
+
+    .phone-call-image {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+
+    #check-phone {
+        position: absolute;
+        left: 63%;
+        top: 62%;
+
+    }
+
+    #green-circle {
+        position: absolute;
+        left: 100px;
+        top: 250px;
+    }
+
+    #selfie-photo-image {
+        top: 80px;
+    }
+
+    #white-circle {
+        top: 60px;
+    }
+}
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .login-page .login-header {
+        width: 85%;
+
+    }
+
+    .phone-call-image {
+        position: absolute;
+        width: 178px;
+        height: 178px;
+        left: 4%;
+        /* top: 21%; */
+    }
+
+    #check-phone {
+        position: absolute;
+        width: 120px;
+        height: 119px;
+        left: 63%;
+        /* top: 105%; */
+
+    }
+
+    .login-header {
+        padding-top: 15px;
+    }
+
+}
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+    .login-page .login-header {
+        width: 80%;
+
+    }
+
+    .phone-call-image {
+        position: absolute;
+        width: 178px;
+        height: 178px;
+        left: 7%;
+        top: 13%
+    }
+
+    #check-phone {
+        position: absolute;
+        width: 120px;
+        height: 119px;
+        left: 63%;
+
+    }
+}
+
+
+
+/* Login Form */
+
+.login-form {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.feedback-request .default-button {
+    margin-bottom: 37px;
+}
+
+.login-form input::placeholder {
+    color: #979797;
+}
+
+.login-form .login-buttton {
+    background-color: #343D3A;
+    color: white !important;
+    border: none;
+    padding: none !important;
+    width: 100%;
+    /* background: #FFFFFF; */
+    /* border: 1.08333px solid #E3E6E3; */
+    border-radius: 40px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.login-form,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+/* Support Links */
+.login-form form input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1.08333px solid #E3E6E3;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    height: 52px;
+    color: #979797 !important;
+    padding-left: 30px;
+
+}
+
+@media screen and (max-height: 700px) {
+
+    .login-form form input {
+        height: 28px;
+    }
+
+}
+
+.support-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+#signup-link {
+    color: #1AD8A2;
+}
+
+@media screen and (min-height: 700px) {
+
+    .support-links {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+/* Landing Page */
+
+.landing-page {
+    overflow: hidden !important;
+}
+
+.landing-page .modal-backdrop {
+    height: 100% !important;
+}
+
+.text-logo {
+    padding-top: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 19.6208px;
+    line-height: 29px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/websitebackground.jpeg);
+    background-size: cover;
+}
+
+.landing-page .text-logo {
+    background-image: url(../images/websitebackground.jpeg);
+    background-size: cover;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+@media screen and (max-height: 700px) {
+    .text-logo {
+        padding-bottom: 125px;
+    }
+}
+
+.text-logo p {
+    margin-top: 28px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -0.03em;
+}
+
+.text-logo span {
+    color: #343D3A;
+}
+
+/* User Selection Screen */
+.user-selection {
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 4%;
+    border-radius: 26px 26px 0px 0px;
+}
+
+#top-right-circle {
+    position: absolute;
+    max-width: 100%;
+    left: 263px;
+    top: -39px;
+    overflow: hidden !important;
+    width: 175px;
+    height: 175px;
+
+}
+
+#full-clear-circle {
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    left: 224px;
+    top: 136px;
+}
+
+.user-image {
+    position: absolute;
+    width: 110px;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name-container {
+    text-align: center;
+    padding-top: 75px;
+}
+
+#profile-name {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+#secondary-name {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #5FCFD4;
+}
+
+.user-selection-options {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 60px;
+}
+
+.user-selection-options hr {
+    margin-top: 1rem;
+}
+
+.signout-text {
+    /* margin-top: 2rem; */
+}
+
+@media screen and (max-width: 380px) {
+    .user-selection-options hr {
+        margin-top: .5rem;
+    }
+
+    .user-selection-options {
+        margin-top: 0;
+    }
+
+    .signout-text {
+        margin-top: 0rem;
+    }
+
+    .text-logo p {
+        margin-top: 0;
+    }
+
+
+}
+
+.user-option {
+    background: #5FCFD4;
+    border-radius: 50px;
+    height: 45px;
+}
+
+.userselection-option-text {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.user-option {
+    margin-bottom: 21px;
+}
+
+.last-landingoption {
+    margin-bottom: 44px;
+}
+
+
+.selection-options {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+.user-selection-options a {
+    text-decoration: none !important;
+    color: #343D3A !important;
+
+
+}
+
+.signout-default {
+    text-decoration: none;
+    color: #5FCFD4;
+}
+
+/* Payment Pages */
+.payment-screen-one {
+    width: 80%;
+    margin: auto;
+}
+
+.payment-header {
+    margin-top: 21px;
+    color: #5FCFD4;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.payment-due-ammount {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.payment-progress-bar {
+    background: #DFEDEE !important;
+    border-radius: 50px !important;
+    height: 18px !important;
+
+}
+
+.payment-progress-bar .progress-bar {
+    background: #5FCFD4 !important;
+    border-radius: 50px;
+}
+
+.payment-legend {
+    width: 95%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 150%;
+    color: #81B8BA;
+}
+
+.payment-display {
+    margin-top: 15px;
+}
+
+.payment-desc {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.payment-detail {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.payment-details-container {
+    margin-top: 34px;
+}
+
+.default-payment-options {
+    margin-bottom: 21px;
+}
+
+.greyed-out {
+    color: #B4B4B4 !important;
+}
+
+.payment-step1-btn {
+    width: 256px;
+    height: 52px;
+    background: #5FCFD4;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 15.1667px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.payment-btn1 {
+    margin-top: 67px;
+}
+
+.payment-header2 {
+    margin-top: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.payment-amount-container {
+    border-bottom: 1px solid #DCDCDC;
+    color: #A2A2A2;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+#payback-amount {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.payment-currency {
+    padding-left: 30%;
+    padding-right: 20px;
+}
+
+.payment-selection-header {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.select-payment-amount {
+    margin-top: 29px;
+
+}
+
+.payment-screen-two .form-check-input:checked {
+    background-color: #5FCFD4;
+    border-color: #5FCFD4;
+
+}
+
+.payment-screen-two .form-check-input {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #D9D9D9;
+}
+
+.payment-screen-two label {
+    padding-left: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.payment-radio-options {
+    margin-top: 16px;
+}
+
+.payment-due-next {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #7B7B7B;
+    margin-bottom: 25px;
+}
+
+.payment-screen-three .kshSPan {
+    font-weight: 700;
+    font-size: 22px;
+    color: #A2A2A2;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.payment-screen-three input {
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+    font-weight: 700;
+    font-size: 35px;
+
+
+}
+
+.submit-custom-amount {
+    margin-top: 77px;
+}
+
+.submit-custom-amount button {
+    background: #5FCFD4;
+    border-radius: 40px;
+    width: 256px;
+    height: 52px;
+    font-weight: 500;
+    font-size: 15.1667px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+.payment-screen-three {
+    display: none;
+}
+
+
+
+
+.payment-page {
+    padding-bottom: 85px;
+}
+
+.payment-page .text-logo {
+    padding-bottom: 26px;
+
+}
+
+.payment-screen-one .row {
+    padding: 0 !important;
+}
+
+.payment-screen-two {
+    display: none;
+    /* width: 80%;  
+    margin: auto;  */
+}
+
+.payment-page .text-logo p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+.payment-options {
+    filter: blur(0px) !important;
+}
+
+.display-header {
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.corner-pfp img {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Payment Page Payment Options css */
+
+
+
+#top-up-duration {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+    border: none;
+    color: #1ad8a2;
+    background: none;
+
+}
+
+
+
+#top-up-duration option {
+    margin: 40px !important;
+    background: rgb(26 216 162 / 10%);
+    color: #1ad8a2;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    padding: 0 5px 0 5px;
+}
+
+#top-up-duration::-ms-expand {
+    /* For IE 10 */
+    display: none;
+}
+
+
+.payment-options {
+    position: relative;
+    background: white;
+    bottom: 2.5%;
+    border-radius: 26px 26px 0px 0px;
+}
+
+.payment-options .header-text {
+    font-size: 11px;
+    line-height: 150%;
+    color: #7B7B7B;
+    padding-top: 45px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.box:first-child {
+    justify-content: start;
+}
+
+.box:first-child>span {
+    margin-right: auto;
+}
+
+.box:last-child {
+    justify-content: end;
+}
+
+.box:last-child>span {
+    margin-left: auto;
+}
+
+.payment-options .top-up {
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 29px;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 11px;
+
+}
+
+.payment-options .top-up-date {
+    font-weight: 500;
+    font-size: 13px;
+    color: #343D3A;
+    text-align: right;
+
+}
+
+.payment-options .button-ammount-style {
+    font-size: 12.5055px;
+    line-height: 150%;
+    border: 0.568433px solid rgba(0, 0, 0, 0.25);
+    border-radius: 9.09493px;
+    width: 67.08px;
+    height: 34.11px;
+    background: white;
+}
+
+.button-ammount {
+
+    width: 90%;
+    margin: auto !important;
+    margin-top: 15px !important;
+
+}
+
+.payment-date-options {
+    background: #343D3A;
+    ;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    height: 100%;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.payment-buyout {
+    background: #5FCFD4;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    height: 100%;
+    line-height: 35px;
+    font-size: 12px;
+
+
+}
+
+
+.payment-page .payment-method {
+
+    display: flex;
+    color: #7B7B7B;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.payment-page .change-method {
+    color: #343D3A;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.payment-page .current-payment {
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 42px;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    align-items: center;
+}
+
+.payment-page .continue {
+    width: 80%;
+    margin: auto;
+    margin-top: 49px;
+
+
+}
+
+.payment-backbtn {
+    font-size: 30px;
+    padding-left: 10%;
+    color: #343D3A;
+    display: none;
+}
+
+.payment-page .continue button {
+    background: #343D3A;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 15px 0 15px 0;
+    width: 100%;
+
+}
+
+/* Navbar */
+.nav {
+    border-top: 1.5px solid #5FCFD4;
+    background: white;
+}
+
+.navbar {
+    height: 85px;
+    width: 85%;
+    margin: auto;
+}
+
+.nav-text {
+    color: #B4B4B4;
+    font-size: 11px;
+}
+
+.active-nav {
+    color: #5FCFD4;
+
+}
+
+/* .navbar .dispaly img {
+    height: auto;
+    width: 25px;
+} */
+
+.offcanvas-end {
+    width: 80% !important;
+    background: #343D3A !important;
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 26px 0px 0px 26px;
+}
+
+.offcanvas {
+    /* height: calc(100% - 90px); */
+    background: rgba(0, 0, 0, 0.25);
+
+}
+
+.modal-backdrop {
+    height: calc(100% - 87px) !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+
+}
+
+
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.menu-pfp {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 90px;
+    margin-top: 40px;
+}
+
+.submenu-name {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+
+}
+
+.submenu-phoneno {
+    font-size: 15px;
+
+    color: #5FCFD4;
+}
+
+.menu-item {
+    margin: auto !important;
+    width: 70% !important;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+
+}
+
+.menu-bottomtext {
+    color: #5FCFD4 !important;
+}
+
+/* .slideout-menu{
+    margin-top: 40px;
+} */
+
+.navbar-menu-item {
+    color: white;
+    font-size: 15px;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: flex-end;
+    height: 27px;
+    padding-left: 18px !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+
+}
+
+.navbar-icons {
+    padding-left: 0px !important;
+    text-align: left;
+}
+
+.close-menu {
+    top: 65px;
+    position: absolute;
+    right: 30px;
+}
+
+
+
+
+
+/* These changes are for the top right hand corner PFP */
+
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+
+
+
+    .payment-page .continue {
+        margin-top: 30px;
+
+    }
+
+    .payment-page .payment-method {
+        margin-top: 20px;
+
+    }
+
+    .payment-page #top-right-circle {
+        left: 203px;
+    }
+
+    .payment-options {
+
+        bottom: 5%;
+
+    }
+
+    .payment-page .text-logo p {
+
+        margin-top: 20px;
+
+    }
+
+    .payment-options .header-text {
+        padding-top: 25px;
+    }
+
+}
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .payment-page .continue {
+        margin-top: 50px;
+
+    }
+
+    .payment-page .payment-method {
+        margin-top: 40px;
+
+    }
+
+}
+
+
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {}
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+
+    .payment-page #top-right-circle {
+        left: 240px;
+    }
+
+}
+
+.selected-payment {
+    background: rgba(26, 216, 162, 0.5) !important;
+}
+
+#custom-input {
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+/* Modals */
+body.modal-open> :not(.modal) {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.modal-header-text {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+#confirm-modal-title {
+    margin-top: 22px;
+}
+
+.payment-page .modal-content {
+    width: 287px !important;
+    /* height: 251px; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px !important;
+    border: none !important;
+}
+
+.default-payment-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 166.5%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    color: #343D3A;
+}
+
+#payment-information {
+    color: #343D3A;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#payment-information-confirmation {
+    color: #343D3A;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#fees-taxes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #9C9C9C;
+}
+
+.modal-footer {
+    justify-content: space-around !important;
+    border: none !important;
+}
+
+/* Confirm Modal */
+
+#confirm-modal {
+    height: 265px;
+
+}
+
+#confirm-modal button {
+    width: 122px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+#cancel-btn {
+    background: #F5F5F5;
+    color: black;
+}
+
+#confirm-btn {
+    background-color: #343D3A;
+    color: white;
+
+}
+
+/* Success Modal */
+
+#success-modal-title {
+    margin-top: 26px;
+}
+
+#success-error-modal {
+    height: 348px;
+}
+
+#success-error-modal button {
+    background: transparent;
+    margin-top: -30px;
+    text-align: right;
+    border: none;
+}
+
+/* Error Modal */
+
+#error-modal-title {
+    margin-top: 26px;
+    color: #FF2E58;
+}
+
+#error-text {
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+
+/* sms Notification */
+
+.sms-notification {
+    position: absolute;
+    width: 365px;
+    height: 130px;
+    left: 0;
+    right: 0;
+    top: -25%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FCFCFE;
+    opacity: .9;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+#sms-circle {
+    text-align: end;
+    padding-right: 0;
+}
+
+.sms-header {
+    margin-top: 24px !important;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+#sms-ending {
+    text-align: end;
+    padding-right: 35px;
+}
+
+.sms-notification p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.sms-text {
+    width: 255px;
+    margin: auto;
+}
+
+
+/* Push Notification */
+.push-notification {
+    position: absolute;
+    width: 365px;
+    height: 345px;
+    left: 0;
+    right: 0;
+    top: -25%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FCFCFE;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+#push-circle {
+    text-align: end;
+    padding-right: 0;
+}
+
+.push-header {
+    margin-top: 24px !important;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+#push-ending {
+    text-align: end;
+    padding-right: 35px;
+}
+
+.push-notification p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.push-text {
+    width: 255px;
+    margin: auto;
+}
+
+.notification-images {
+    margin-top: 37px;
+}
+
+.push-more-details {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+    text-decoration: none;
+}
+
+.push-more-details-container {
+    margin-top: 20px;
+    padding-bottom: 27px;
+}
+
+
+/* These changes are for different screen sizes for sms notifications */
+
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+
+    .sms-notification {
+
+        top: -32%;
+
+    }
+
+    .push-notification {
+
+        top: -32%;
+
+    }
+
+}
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .sms-notification {
+
+        top: -30%;
+        width: 350px;
+
+
+    }
+
+    .push-notification {
+
+        top: -30%;
+        width: 350px;
+
+
+    }
+
+}
+
+
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+
+    .sms-notification {
+
+        top: -28%;
+
+    }
+
+    .push-notification {
+
+        top: -28%;
+
+    }
+
+}
+
+/* 
+.swipe-container {
+    overflow: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+.swipe-container::-webkit-scrollbar {
+    display: none;
+  } */
+
+
+/* Help Centre */
+
+.help-centre-page .text-logo {
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 38px;
+}
+
+.support-options {
+    position: relative;
+    background: white;
+    bottom: 2.5%;
+    border-radius: 26px;
+}
+
+#support-agent {
+    margin-top: 67px;
+}
+
+#support-help-text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 123.5%;
+    margin-top: 40px;
+}
+
+.contact-live-chat-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #343D3A;
+}
+
+
+.contact-live-chat {
+    width: 95%;
+    margin: auto !important;
+    background: rgba(95, 207, 212, 0.1);
+    border: 1.5px solid #5FCFD4;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 56px;
+    align-items: center;
+    margin-top: 99px !important;
+}
+
+
+.support-circle {
+    margin-top: 90px;
+}
+
+.support-options .log-an-issue {
+    font-size: 11px;
+    line-height: 150%;
+    color: #7B7B7B;
+    font-weight: 500;
+
+}
+
+.support-options .support-email {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    margin-top: 0;
+
+}
+
+
+
+
+
+/* Support Chat */
+
+.support-chat {
+    position: relative;
+    background: white;
+    bottom: 4.2%;
+    border-radius: 26px;
+    height: calc(100% - 105px) !important;
+
+}
+
+.todays-date {
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+.support-chatbox-text {
+    margin-top: 15px;
+    overflow-y: scroll;
+    height: 710px;
+    height: calc(100% - 110px);
+
+}
+
+.joined-chat-text {
+    color: #7B7B7B;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.today-chat {
+    /* background: #F2F2F2; */
+    width: 80px;
+    margin: auto;
+    color: #a1a6ad;
+    font-size: 12px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.operator-text {
+    background: #EAEBF2;
+    border-radius: 10px;
+    width: 70%;
+    padding-bottom: 10px;
+    color: #818181;
+
+}
+
+.chat-container {
+    width: 90%;
+    margin: auto;
+}
+
+.chat-container img {
+    height: 25px;
+    width: 25px;
+}
+
+.chat-container p {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+.chat-user-icon {
+    align-items: flex-end;
+    display: flex;
+}
+
+.chat-icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.user-chat-text {
+    border-radius: 10px;
+    width: 70%;
+    /* margin-right: 15px; */
+    margin-left: auto;
+    padding-bottom: 10px;
+    background: #5FCFD4;
+    color: white;
+}
+
+.chat-timestamp {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.message-chatbox {
+    /* height: 42px;     */
+
+    border: none;
+    width: 100%;
+    margin-left: 25px;
+}
+
+
+.message-box {
+    align-items: center;
+    margin-top: 10px !important;
+    background: #EAEBF2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.message-box input {
+    justify-content: center;
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #A8A8AA;
+}
+
+.message-box input::placeholder {
+    color: #A8A8AA;
+
+}
+
+.message-inputbox {
+    justify-content: center;
+    display: flex;
+}
+
+.mic-box {
+    padding-left: 0 !important;
+}
+
+.flex-messages {
+    width: 100%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.flex-messages img {
+    height: 18px;
+}
+
+#smiley {
+    padding-left: 20px;
+    padding-right: 13px;
+}
+
+#camera {
+    padding-right: 13px;
+    padding-left: 19px;
+}
+
+.agent-info {
+    width: 80% !important;
+    margin: auto !important;
+    border-bottom: 1px solid #EAEBF2;
+    padding-bottom: 25px;
+}
+
+.agent-image img {
+    height: 94px;
+}
+
+.agent-name {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #EAEBF2;
+    border-radius: 13px 13px 13px 0px;
+    width: 65% !important;
+    margin-left: auto;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-agent-icon {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Log Issue Page */
+
+.issue-types {
+    margin-top: 67px;
+}
+
+.grey-circle {
+    width: 23px;
+    height: 23px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+.issue-description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.issue-spacing {
+    margin-bottom: 25px !important;
+}
+
+.issue-types2 {
+    margin-top: 58px;
+}
+
+.log-issue-subheader {
+    color: #343D3A;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 26px;
+}
+
+.type-of-issue {
+    width: 283px;
+    height: 50px;
+    background: #F7F7F7;
+    border-radius: 50px;
+    margin: auto;
+}
+
+/* Account Status Page */
+
+.account-status-image {
+    padding-top: 14px;
+}
+
+#schedule-log-indicators button {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+}
+
+#schedule-log-indicators button.active {
+    background-color: #5FCFD4;
+}
+
+#schedule-log-indicators button {
+    background-color: #D9D9D9;
+}
+
+.card-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+
+.account-centre .carousel-indicators {
+    position: relative !important;
+}
+
+.chart-container {
+    height: 200px;
+
+}
+
+#acountChart {
+    margin: auto;
+}
+
+.chart-text {
+    position: relative;
+    margin-top: -120px;
+}
+
+.chart-percent {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+
+
+    color: #343D3A;
+}
+
+.chart-subheader {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    color: #B4B4B4;
+}
+
+.balance-header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    color: #5FCFD4;
+    padding-top: 10px;
+}
+
+.balance-subheader {
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 15px;    */
+    letter-spacing: -0.03em;
+    color: #B4B4B4;
+}
+
+
+.loan-summary {
+    width: 33%;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    height: 82px;
+    text-align: center;
+}
+
+.loan-summary-price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    padding-top: 18px;
+    color: #343D3A;
+
+}
+
+.loan-summary-subheader {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #7B7B7B;
+    margin-bottom: 10px;
+}
+
+.grey-circle {
+    height: 12px;
+    width: 12px;
+    background: #EAEAEA;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 10px !important;
+}
+
+.blue-circle {
+    height: 12px;
+    width: 12px;
+    background: #5FCFD4;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 10px !important;
+}
+
+.loan-payment-duedate {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #5FCFD4;
+}
+
+.grey-border {
+    border: 2px solid #C5C5C5;
+}
+
+.blue-border {
+    border: 1px solid #5FCFD4;
+
+}
+
+.device-credit {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+    padding-top: 18px;
+    padding-bottom: 7px;
+}
+
+.progress-bar-loan-header {
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+
+    color: #7B7B7B;
+}
+
+.progress-bar-loan-header span {
+    color: black;
+    font-weight: 600;
+}
+
+.account-centre-info {
+    padding-bottom: 87px;
+}
+
+.loan-progress-bar {
+    height: 18px;
+}
+
+.card-log {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    /* overflow-y: auto; */
+    height: 475px;
+}
+
+.progress-grey-text {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.03em;
+    color: #7B7B7B;
+}
+
+.progress-green-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.03em;
+    color: #5FCFD4;
+}
+
+.progress-bar-current {
+    color: #343D3A;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+}
+
+.progress-bar-labels {
+    padding-top: 9px;
+}
+
+.account-centre .progress {
+    background: #DFEDEE !important;
+    border-radius: 50px !important;
+    height: 18px !important;
+}
+
+.account-centre .progress-bar {
+    background-color: #5FCFD4;
+    border-radius: 50px 50px 50px 50px !important;
+}
+
+.amount-due-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5FCFD4;
+}
+
+.amount-due {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #343D3A;
+
+}
+
+.loan-details-labels {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 150%;
+    color: #81B8BA;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.amount-due-container {
+    padding-top: 19px;
+}
+
+.paid-off-date-container {
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    height: 78px;
+
+}
+
+.paid-off-date-header {
+    padding-top: 13px;
+    padding-left: 23px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 150%;
+    color: #5FCFD4;
+}
+
+.paid-off-date-payment {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.pl-19 {
+    padding-left: 28px;
+
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.detail-info-container {
+    margin-top: 27px;
+}
+
+
+.detail-info-header {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 150%;
+    padding-bottom: 8px;
+    color: #5FCFD4;
+}
+
+.detail-info {}
+
+.loan-details-greyheader {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #7B7B7B;
+}
+
+.loan-details-blackheader {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+
+    color: #343D3A;
+}
+
+
+.detail-row {
+    margin-bottom: 10px;
+}
+
+.on-time-payment {
+    font-size: 8.08247px;
+    line-height: 9px;
+    letter-spacing: -0.03em;
+
+    color: #343D3A;
+}
+
+.payment-legend-paymenthistory {
+    margin-top: 30px;
+}
+
+
+.ontime-payment-color {
+    display: block;
+    background: #F0E7DE;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+.actual-payment-color {
+    display: block;
+    background: #5FCFD4;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.payment-due-amount {
+    margin-top: 30px;
+}
+
+.payment-due-amount-header {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.03em;
+
+    color: #7B7B7B;
+}
+
+.payment-due-amount-KSH {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+.payment-due-amount button {
+    background: #5FCFD4;
+    border-radius: 40px;
+    width: 256px;
+    height: 52px;
+    border: none;
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 15.1667px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+.payment-duedate {
+    margin-top: 17px;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #5FCFD4;
+}
+
+/* Comission Page */
+
+.comission-badge-container {
+    padding-top: 45px;
+}
+
+.comission-badge-container img {
+    padding-left: 25px;
+}
+
+.agent-level-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #343D3A;
+
+}
+
+.badge-level-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logissue-description .header {
+    padding-top: 60px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 123.5%;
+}
+
+.carousel-inner {
+    padding-bottom: 35px;
+}
+
+.logissue-description {
+    /* background: #F2F2F2; */
+    /* height: 100%; */
+}
+
+
+
+.card-top {
+    height: 273px;
+    background: #5FCFD4;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.log-photo {
+    height: 242px;
+}
+
+.card-bottom {
+    background: white;
+    border-radius: 20px;
+    height: 132px;
+    padding-left: 36px;
+
+}
+
+.card-bottom p {
+    margin-bottom: 1px;
+
+}
+
+.card-text-contact {
+    font-size: 12px;
+    font-weight: 500;
+    color: #FF2E58;
+    padding-top: 23px;
+}
+
+.card-text-contact-blue {
+    font-size: 12px;
+    font-weight: 500;
+    color: #007AFF;
+    padding-top: 23px;
+}
+
+.card-text-item {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.card-text-date {
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.log-issue-page .carousel-indicators>li {
+    border-radius: 50%;
+
+}
+
+.log-issue-page .carousel-indicators {
+    bottom: -100px;
+
+}
+
+#log-carousel {
+    margin-top: 35px;
+}
+
+
+
+
+
+.carousel #log-indicators button {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+}
+
+.carousel #log-indicators button.active {
+    background-color: #FF2E58;
+}
+
+.carousel #log-indicators button {
+    background-color: #D9D9D9;
+}
+
+/* Schedule Repair */
+
+.google-map {
+    margin-top: 58px;
+    /* text-align: center; */
+}
+
+.scrollable-header {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.location-search {
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.location-search input {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    height: 42px;
+    width: 291px;
+
+}
+
+.location-search input::placeholder {
+    font-size: 12px;
+    color: #ABABAB;
+    opacity: 0.34;
+}
+
+.pin-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #979797;
+    margin-top: 25px;
+}
+
+.scheduledate {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 52px;
+    color: #343D3A;
+}
+
+.scheduledate span {
+    padding-right: 19px;
+}
+
+.map-api {
+    margin-top: 25px;
+}
+
+.map-api img {
+    width: 100%;
+}
+
+.calendar-image {
+    margin-top: 75px;
+}
+
+.color-calendar.basic .calendar__days .calendar__day-selected .calendar__day-box {
+    border-radius: 50% !important;
+}
+
+
+/* Time picker css */
+
+.log-issue-page {
+    padding-bottom: 85px;
+}
+
+.log-issue-page .mbsc-comp {
+    text-transform: uppercase;
+
+}
+
+.log-issue-page .mbsc-fr-w {
+    height: 150px;
+}
+
+.mbsc-sc-whl-w .mbsc-dt-whl-a .mbsc-comp {}
+
+.delivery-date {
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 44px;
+}
+
+.date-buttons {
+    width: 66%;
+    margin: auto;
+
+}
+
+.date-buttons button {
+    width: 100%;
+    border-radius: 40px;
+    /* height: 52px; */
+    margin-bottom: 26px;
+    color: white;
+    border: none;
+    padding: 15px 0 15px 0;
+
+}
+
+.schedule-repair-confirm-description .default-header {
+    font-weight: 600;
+}
+
+.confirm-button {
+    margin-top: 20px;
+    background: #343D3A;
+
+}
+
+.select-time {
+    padding-top: 25px;
+}
+
+.change-button {
+    background: #5FCFD4;
+}
+
+.scheduleconfirm-logo img {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.schedule-repair-map-description .default-header {
+    padding-top: 30px;
+}
+
+.schedule-repair-date-description .default-header {
+    padding-bottom: 28px;
+}
+
+
+/* Scrollable time picker */
+
+.picker-window {
+    position: absolute;
+    border-top: 1px solid #d4d9d9;
+    border-bottom: 1px solid #d4d9d9;
+    height: 1.4em;
+    left: 0;
+    top: 50%;
+    transform: translateY(-65%);
+    width: 100%;
+    pointer-events: none;
+}
+
+.triangle {
+    content: '';
+    background: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    display: block;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.picker {
+    display: inline-grid;
+    /* box-shadow: 0 0.5vw 2vw -5px rgba(0, 0, 0, .2); */
+    border-radius: 15px;
+    position: relative;
+    /* border-top: 2rem solid white;
+    border-bottom: 2rem solid white; */
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    background: white;
+    grid-template-columns: repeat(4, fit-content(150px));
+    font-size: calc(.5rem + 2.4vw);
+    position: relative;
+    font-feature-settings: "tnum";
+    font-weight: 400;
+}
+
+.picker:before,
+.picker:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.2em;
+    pointer-events: none;
+}
+
+.picker:before {
+    top: -0.2em;
+    background: linear-gradient(white, rgba(255, 255, 255, .7));
+}
+
+.picker:after {
+    bottom: -0.2em;
+    height: 2.4em;
+    background: linear-gradient(rgba(255, 255, 255, .7), white);
+}
+
+.picker ul {
+    -ms-overflow-style: none;
+    max-height: 4em;
+    overflow-y: scroll;
+    /* margin-right: 1em; */
+    scroll-snap-type: y mandatory;
+    padding-bottom: 3em;
+    padding-top: 1.7em;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.picker ul::-webkit-scrollbar {
+    display: none;
+}
+
+.picker li {
+    scroll-snap-align: center;
+    height: 1.4em;
+    text-align: right;
+    word-spacing: 0.2em;
+}
+
+.picker-day {
+    padding-right: 0.5em;
+}
+
+.picker-day span {
+    padding-left: 0.56em;
+}
+
+
+
+
+/* Scrollable payment picker */
+
+.payment-picker-window {
+    position: absolute;
+    border-top: 1px solid #d4d9d9;
+    border-bottom: 1px solid #d4d9d9;
+    height: 1.4em;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-65%);
+    width: 80%;
+    pointer-events: none;
+    margin: auto !important;
+}
+
+.payment-picker {
+    /* display: inline-grid; */
+    /* box-shadow: 0 0.5vw 2vw -5px rgba(0, 0, 0, .2); */
+    border-radius: 15px;
+    position: relative;
+    /* border-top: 2rem solid white;
+    border-bottom: 2rem solid white; */
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    background: white;
+    grid-template-columns: repeat(4, fit-content(150px));
+    font-size: calc(.5rem + 2.4vw);
+    position: relative;
+    font-feature-settings: "tnum";
+    font-weight: 400;
+}
+
+.payment-picker:before,
+.payment-picker:after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 2.2em;
+    pointer-events: none;
+}
+
+.payment-picker:before {
+    top: -0.2em;
+    background: linear-gradient(white, rgba(255, 255, 255, .7));
+}
+
+.payment-picker:after {
+    bottom: -0.2em;
+    height: 2.4em;
+    background: linear-gradient(rgba(255, 255, 255, .7), white);
+}
+
+.payment-picker ul {
+    max-height: 4em;
+    overflow-y: scroll;
+    margin-right: em;
+    scroll-snap-type: y mandatory;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    list-style-type: none;
+    width: 70%;
+    margin: auto;
+}
+
+.payment-picker ul::-webkit-scrollbar {
+    display: none;
+}
+
+.payment-picker li {
+    scroll-snap-align: center;
+    height: 1.8em;
+    text-align: center;
+    word-spacing: 0.2em;
+}
+
+.payment-picker-day {
+    padding-right: 0.5em;
+}
+
+.payment-picker-day span {
+    padding-left: 0.56em;
+}
+
+
+/* Repair  Status Pages */
+
+.success-check {
+    height: 111px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.repair-image {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.card-top-repair {
+    border-radius: 20px 20px 20px 0px;
+}
+
+.repair-status-page {
+    /* background: #F2F2F2; */
+}
+
+.repair-status-text {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.repair-status-subtext {
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.padding-right {
+    padding-right: 20px
+}
+
+/* Feedback Pages */
+
+.feedback-page {
+    padding-bottom: 85px;
+}
+
+
+
+.feedback-description .header {
+    padding-top: 14px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 123.5%;
+}
+
+.feedback-form-description .default-button:last-child button {
+    background: #343D3A !important;
+    margin-top: 97px;
+}
+
+
+.feedback-description .subtext {
+    font-size: 22px;
+}
+
+.feedback-user-img {
+    border: 2px solid #FFFFFF;
+    height: 98px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.submit-textbox-button {
+    margin-top: 72px !important;
+}
+
+.feedback-faces {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.rating-subtext {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 123.5%;
+    color: #343D3A;
+
+}
+
+.feedback-message {
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.feedback-header {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 75px;
+}
+
+.feedback-header-success {
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 75px;
+}
+
+#feedback-name {
+    font-size: 26px;
+}
+
+.feedback-smile {
+    position: relative;
+}
+
+.feedback-page .confirm-button {
+    margin-top: 29px;
+}
+
+.feedback-request2 .default-button {
+    margin-bottom: 37px;
+}
+
+.feedback-request2 {
+    padding-bottom: 85px;
+}
+
+.feedback-request {
+    padding-bottom: 85px;
+}
+
+
+
+
+.centered-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select-service-text {
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #7B7B7B;
+}
+
+.feedback-smile {
+    margin-top: 61px;
+    margin-bottom: 63px;
+}
+
+
+
+
+.apply-all {
+    margin-top: 50px;
+}
+
+.default-button {
+    width: 66%;
+    margin: auto;
+}
+
+.default-button button {
+    width: 100%;
+    border-radius: 40px;
+    height: 52px;
+    color: white;
+    border: none;
+
+}
+
+.default-button {
+    margin-top: 25px;
+}
+
+.feedback-form-description button {
+    background: #8E8E93;
+
+}
+
+.feedback-textarea textarea {
+    width: 90%;
+    margin-top: 60px;
+    height: 275px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+}
+
+.character-count {
+    text-align: right;
+    width: 90%;
+    margin: auto;
+    font-weight: 400;
+    font-size: 10px;
+    color: #8E8E93;
+}
+
+/* Account Centre Styles */
+.account-centre-arrears {
+    background: linear-gradient(180deg, rgba(255, 193, 7, 0.2) 0%, rgba(255, 193, 7, 0) 100%);
+    border-radius: 26px 26px 0px 0px;
+    height: 200px;
+}
+
+.account-centre-green {
+    height: 200px;
+    background: linear-gradient(180deg, rgba(26, 216, 162, 0.2) 0%, rgba(26, 216, 162, 0) 100%);
+    border-radius: 26px 26px 0px 0px;
+}
+
+.account-centre-red {
+    height: 200px;
+    background: linear-gradient(180deg, rgba(248, 65, 93, 0.2) 0%, rgba(248, 65, 93, 0) 100%);
+    border-radius: 26px 26px 0px 0px;
+}
+
+.account-centre .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/blackdownarrow.png");
+    transform: rotate(0deg);
+}
+
+.account-centre .accordion-button::after {
+    background-image: url("../images/blackdownarrow.png");
+}
+
+.account-centre .accordion-button::after {
+    background-image: url("../images/blackdownarrow.png");
+}
+
+.processsales-page .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/blackdownarrow.png");
+    transform: rotate(0deg);
+
+}
+
+.yellow-progress-bar {
+    background: #FFC107 !important;
+}
+
+.progress-bar-background {
+    border-radius: 50px !important;
+    width: 80%;
+    margin: auto;
+    height: 21px !important;
+}
+
+.progress-next img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.yellow-outer-bar {
+    background: rgba(255, 193, 7, 0.35) !important;
+
+}
+
+.green-outer-bar {
+    background: rgba(26, 216, 162, 0.35) !important;
+
+}
+
+.green-progress-bar {
+    background: #1AD8A2 !important;
+}
+
+.red-outer-bar {
+    background: rgba(248, 65, 93, 0.35) !important;
+
+}
+
+.red-progress-bar {
+    background: #F8415D !important;
+}
+
+.account-centre-emoji {
+    margin-top: 24px;
+}
+
+.account-centre-emoji p {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: -0.03em;
+
+}
+
+.accordian-container {
+    overflow-y: scroll;
+    /* height:500px  !important; */
+    padding-bottom: 85px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #5FCFD4 !important;
+    background-color: white !important;
+    box-shadow: none !important;
+
+}
+
+.accordion-button:focus {
+    border-color: white !important;
+    box-shadow: none !important;
+}
+
+.accordion-item {
+    width: 95%;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px !important;
+    margin-bottom: 26px;
+    border: none !important;
+}
+
+.accordion-button {
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px 20px 0px 20px !important;
+
+}
+
+.account-status-arrears {
+    width: 108px;
+    height: 36.36px;
+    text-align: center;
+    border-radius: 6px;
+    background: #FECF05;
+    margin: auto;
+    line-height: 36.36px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+
+
+
+.information-row {
+    background: rgba(247, 247, 247, 0.5);
+    border-radius: 5px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 7px;
+}
+
+.account-amount-paid {
+    border-radius: 5px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(26, 216, 162, 0.05);
+    margin-bottom: 7px;
+
+}
+
+.account-amount-owed {
+    border-radius: 5px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(248, 65, 93, 0.1);
+    margin-bottom: 7px;
+
+}
+
+.current-info {
+    font-size: 12px;
+    text-align: initial;
+    color: #000000;
+}
+
+.current-result {
+    font-size: 12px;
+    text-align: end;
+}
+
+
+
+.blue-account-button button {
+    background: #343D3A;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 192px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Schedule Repair Schedule Confirmed*/
+
+.success-image {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.success-image img {
+    height: 191px;
+}
+
+.repair-calendar {
+    margin-top: 30px;
+}
+
+.repair-calendar img {
+    height: 60px;
+}
+
+.confirmed-date {
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 24px
+}
+
+/* Register Screen */
+.register-page {
+    background-color: #343D3A;
+}
+
+.register-display-circle {
+    text-align: right;
+}
+
+.register-header {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.register-header-logo {
+    width: 100%;
+}
+
+.register-form {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 72px;
+}
+
+
+
+.register-form input::placeholder {
+    color: #979797;
+    /* padding-left: 30px;  */
+}
+
+.register-form input[type=submit] {
+    background-color: #343D3A;
+    color: white;
+    border: none;
+}
+
+.register-form,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+.register-form form input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1.08333px solid #E3E6E3;
+    border-radius: 40px;
+    margin-bottom: 17px;
+    height: 52px;
+    color: #979797 !important;
+    padding-left: 30px;
+
+}
+
+.register-button {
+    margin-top: 38px;
+    background: #5FCFD4;
+    border-radius: 40px;
+    width: 80%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15.1667px;
+    color: #FFFFFF;
+    padding: 15px;
+
+}
+
+.register-sign-in {
+    margin-top: 30px;
+}
+
+.register-sign-in a {
+    color: #5FCFD4;
+    text-decoration: none;
+}
+
+.register-privacy {
+    margin-top: 10px;
+}
+
+.register-privacy a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* Welcome Page */
+
+.welcome-page {
+    background: #5FCFD4;
+    overflow-y: hidden;
+
+}
+
+.welcome-username {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+    margin-top: 80px;
+}
+
+.register-image {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 20px;
+}
+
+.welcome-subheader-name {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.upload-welcome-image a {
+    color: #343D3A;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.upload-welcome-image {
+    margin-top: 25px;
+}
+
+.welcome-page .text-logo {
+    padding-bottom: 47px;
+}
+
+.welcome-footer {
+    background-color: white;
+    height: 100%;
+    border-radius: 25px;
+    overflow-y: hidden;
+}
+
+.welcome-continuebtn {
+    margin-top: 80px;
+}
+
+.sign-out-welcome {
+    margin-top: 60px;
+}
+
+/* Sales Proccess */
+.processsales-page {
+    /* background-color: #5FCFD4; */
+}
+
+.step-notcompleted {
+    color: #C5C5C5 !important;
+}
+
+.process-sales-header {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #5FCFD4;
+    margin-bottom: 18px;
+}
+
+/* Progress bar in sales */
+
+#progress {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#progress-bar {
+    position: absolute;
+    background: #5FCFD4;
+    height: 9px;
+    width: 0%;
+    top: 35%;
+    left: 0;
+    z-index: 1;
+}
+
+#progress-num {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #D1D1D1;
+}
+
+#progress-num::before {
+    content: "";
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    height: 9px;
+    width: 100%;
+}
+
+#progress-num .step {
+    border: 4px solid #EEEEEE;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    /* line-height: 25px; */
+    text-align: center;
+    background-color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+#progress-num .step.active {
+    border-color: #5FCFD4;
+    background-color: #5FCFD4;
+    color: #343D3A;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#progress-num .step.activestage {
+    background-color: white !important;
+    border-color: #5FCFD4;
+    color: #343D3A;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.progress-btn {
+    background: lightgray;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    background: #5FCFD4;
+    border-radius: 50px;
+    color: white;
+    /* margin-bottom: 30px;  */
+    font-size: 14px;
+}
+
+.progress-step-number {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+
+.sales-selection-options {
+    border-bottom: 0.899563px solid #D9D9D9;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.padding-bottom20 {
+    padding-bottom: 20px;
+}
+
+/* .processsale-form{
+    background: white;
+    height:100vh;
+    border-radius: 52px
+} */
+
+.process-sales-stages {
+    /* height: calc(100% - 185px) !important; */
+    overflow-y: scroll;
+
+}
+
+.sales-stage1 {
+    padding-top: 46px;
+}
+
+.sales-stage5 {
+    margin-bottom: 25px;
+}
+
+.sales-stage5 h1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #343D3A;
+}
+
+.sales-stage5 h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #343D3A;
+    margin-bottom: 50px;
+}
+
+.sale-stage-container .accordion-item {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px;
+    margin-bottom: 15px;
+}
+
+.sales-option-title {
+    margin-left: 17px;
+}
+
+.sales-phone-radio label {
+    font-weight: 500;
+    font-size: 14.393px;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+input[name="fav_phone"] {
+    accent-color: #EFA939;
+    /* border: 5px solid #EEEEEE; */
+    height: 30px;
+    width: 30px;
+    appearance: none;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-clip: content-box;
+    background: #D9D9D9;
+    border: 5px solid #EEEEEE;
+}
+
+.sales-selection-images {
+    width: 20px;
+}
+
+input[name="fav_phone"]:checked {
+    background-color: #EFA939;
+    /* padding: 4px; */
+    border: 5px solid #EEEEEE;
+}
+
+.sales-required-text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #FF2E58;
+}
+
+/* Scanner */
+.scanner-page {
+    background: #5FCFD4;
+    overflow-y: hidden;
+}
+
+.scanner-page .modal-backdrop {
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+
+}
+
+.scanner-page .modal-content {
+    height: 90%;
+    border-radius: 20px;
+    border: none;
+}
+
+.scanner-page .modal-dialog-centered {
+    justify-content: center;
+}
+
+.scanner-page .modal-dialog {
+    height: 90%;
+}
+
+.scanner-display {
+    background: white;
+    border-radius: 26px 26px 0 0;
+}
+
+.scanner-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.scanner-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.scanner-page .text-logo {
+    padding-bottom: 20px;
+}
+
+.scan-button {
+    margin-top: 95px;
+}
+
+/* Scanner Result */
+
+.scanner-display-result {
+    background: white;
+    border-radius: 26px
+}
+
+.scan-results {
+    font-weight: 500;
+    font-size: 18px;
+    color: #5FCFD4;
+}
+
+.scan-results p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #343D3A;
+}
+
+.scan-result-buttons {
+    margin-top: 96px;
+}
+
+.scan-results {
+    margin-top: 62px;
+}
+
+.scanner-display-result .greybutton {
+    margin-top: 20px;
+}
+
+/* Modal Box Sales Process Wizard */
+
+.modal-sales-title {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: -0.03em;
+    margin-bottom: 120px;
+    color: #5FCFD4;
+}
+
+.modal-scan-text-container {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+
+}
+
+.fineprint {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #9C9C9C;
+    margin-top: 60px;
+}
+
+
+.scanner-confirm-text {
+    margin-bottom: 30px;
+}
+
+.modal-sales-text-level-1 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.scanner-page .modal-header {
+    border-bottom: none;
+}
+
+.scanner-page .modal-header button {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+
+    background-image: url(../images/whiteclose.png);
+    opacity: 1;
+
+}
+
+.modal-body-sales button {
+    background: #5FCFD4;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 40px;
+    margin-top: 100px;
+}
+
+.header {
+    padding-top: 30px !important;
+    font-size: 22px !important;
+    line-height: 123.5%;
+}
+
+
+
+
+
+
+
+/* New accounts page  */
+
+.loan-display-header {
+    background: #5FCFD4;
+    border-radius: 11px 11px 11px 0px;
+    height: 94px;
+}
+
+.topup-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    padding-left: 76px;
+    padding-top: 16px;
+    color: #343D3A;
+}
+
+.time-container img {
+    padding-left: 38px;
+    padding-right: 10px;
+}
+
+#timer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+
+.display-amount-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.848px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #343D3A;
+    margin-top: 28px;
+}
+
+
+.loan-amount-due {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.5882px;
+    line-height: 150%;
+    color: #B4B4B4;
+}
+
+#loan-amount-due {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33.4073px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #343D3A;
+}
+
+.loan-display-body-top button {
+    background: #343D3A;
+    border-radius: 36.8435px;
+    width: 212px;
+    height: 48px;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 33px;
+}
+
+.bottom-grey-border {
+    border: 1px solid #D9D9D9;
+    width: 264px;
+}
+
+
+.loan-balance-subheader {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.5px;
+    align-items: center;
+
+    color: #000000;
+}
+
+.loan-display-body-bottom {
+
+    margin-top: 31px;
+}
+
+.currency-color {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.5px;
+
+    color: #B4B4B4;
+}
+
+#loanbalance {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.4363px;
+
+
+    color: #343D3A;
+}
+
+.last-payment-days {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+
+    color: #343D3A;
+}
+
+
+.last-payment-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+
+
+    color: #B4B4B4;
+}
+
+.last-payment-container {
+    margin-top: 14px;
+}
+
+
+/* New Landing page */
+.landing-page h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+    color: #343D3A;
+}
+
+.landing-page .loan-display-information-container {
+    /* padding-top: 60px;  */
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+}
+
+.landing-page .loan-pay-now {
+    width: 135px;
+    margin-bottom: 0px;
+}
+
+.landing-page .loan-display-body-bottom {
+    margin-top: 15px;
+    padding-bottom: 29px;
+}
+
+.landing-page .loan-balance-subheader {
+    font-size: 15px;
+}
+
+.landing-page .currency-color {
+    font-size: 13.5882px;
+}
+
+.landing-page #loanbalance {
+    font-size: 22.0488px;
+}
+
+.bs-container-right {
+    margin: auto !important;
+    width: 70%;
+}
+
+.landing-buttons {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+}
+
+.landing-page-buttons {
+    margin-top: 38px;
+}
+
+.landing-buttons img {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.landing-buttons p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 108%;
+    /* or 15px */
+
+    text-align: center;
+
+    color: #343D3A;
+}
+
+
+/* DSR Customer Portfolio */
+.dsr-portfolio-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 123.5%;
+    color: #343D3A;
+    padding-top: 37px;
+    padding-bottom: 45px;
+}
+
+.customer-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+
+    color: #343D3A;
+}
+
+.customer-status-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+
+    color: #5FCFD4;
+}
+
+.DSR-customer .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/arrow-down-icon.svg) !important;
+    transform: rotateZ(0deg) !important;
+
+}
+
+.DSR-customer .accordion-button::after {
+    background-image: url(../images/arrow-down-icon.svg) !important;
+    transform: rotateZ(-90deg) !important;
+
+}
+
+.DSR-status-approved {
+    color: #4CAF50;
+}
+
+.DSR-status-declined {
+    color: #FF2E58;
+}
+
+.DSR-status-pending {
+    color: #F7C02B;
+}
+
+.customer-information {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+
+    color: #343D3A;
+}
+
+.w70 {
+    width: 70% !important;
+    margin: auto !important;
+
+}
+
+.dsr-customer-info {
+    margin-bottom: 11px;
+
+}
+
+.DSR-customer .accordion-item {
+    border: 1px solid #EEEEEE !important;
+    border-radius: 10px !important;
+    box-shadow: 0px !important;
+}
+
+
+
+.comission-screen-one {
+    width: 90%;
+    margin: auto;
+}
+
+.comission-box {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px;
+    height: 108px;
+    margin-bottom: 16px;
+}
+
+
+.comission-image-box-blue {
+    /* width:93px;  */
+    background: #5FCFD4;
+    border-radius: 20px 20px 0px 20px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.comission-image-box-orange {
+    background: #F5922A;
+    border-radius: 20px 20px 0px 20px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.comission-box-header,
+.sales-box-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    color: #343D3A;
+}
+
+.comission-box-subheader,
+.sales-box-subheader {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5FCFD4;
+}
+
+
+
+
+/* These changes are for mobile changes */
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+
+    .log-issue-page .header {
+        padding-top: 10px !important;
+    }
+
+    .register-display-circle {
+        height: 100px;
+    }
+
+    .submit-textbox-button {
+        margin-top: 30px !important;
+    }
+
+    .feedback-form-description .default-button:last-child button {
+        background: #343D3A !important;
+        margin-top: 25px;
+    }
+
+    .register-form {
+        margin-top: 32px;
+    }
+
+    .modal-sales-title {
+        margin-bottom: 50px;
+
+    }
+
+    .modal-body-sales button {
+        margin-top: 50px;
+    }
+
+    .scan-result-buttons {
+        margin-top: 50px;
+    }
+
+
+    .select-time {
+        padding-top: 0px;
+    }
+
+    .schedule-repair-date-description .default-header {
+        padding-bottom: 10px;
+    }
+
+    .scheduledate {
+        margin-top: 12px;
+    }
+
+    .log-issue-page .rounded-border {
+        position: relative;
+        background: white;
+        bottom: 3.5%;
+        border-radius: 26px 26px 0 0;
+    }
+
+    .carousel-inner {
+        padding-bottom: 10px;
+    }
+
+    #userlogin {
+        margin-bottom: 10px;
+    }
+
+    #userpassword {
+        margin-bottom: 20px;
+    }
+
+
+    .scan-result-buttons {
+        margin-top: 20px;
+    }
+
+    .scan-results {
+        margin-top: 30px;
+    }
+
+    .scanner-container {
+        width: 90%;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    .scan-button {
+        margin-top: 15px;
+    }
+
+    .sign-out-welcome {
+        margin-top: 30px;
+    }
+
+    .welcome-continuebtn {
+        margin-top: 35px;
+    }
+
+    .welcome-username {
+        margin-top: 20px;
+    }
+
+    .register-button {
+        margin-top: 0px;
+
+    }
+
+    .repair-calendar {
+        margin-top: 15px;
+    }
+
+    .user-image {
+        top: -70px;
+    }
+
+    .name-container {
+        padding-top: 30px;
+    }
+
+    .menu-item {
+        padding-bottom: 7.5px;
+        padding-top: 7.5px;
+    }
+
+    .payment-options {
+        /* height:442px; */
+        overflow-y: scroll;
+    }
+
+    .accordian-container {
+        height: 300px !important;
+    }
+
+    .color-calendar--small {
+        height: 225px !important;
+    }
+
+    .feedback-form-description .default-button {
+        margin-top: 20px;
+    }
+
+    .feedback-textbox-page .feedback-header {
+        padding-top: 25px;
+    }
+
+    .feedback-textbox-page .feedback-header {
+        padding-top: 25px;
+    }
+
+    .feedback-textarea textarea {
+        margin-top: 30px;
+
+    }
+
+    .feedback-description .header {
+        font-size: 19px;
+    }
+
+    .feedback-description .subtext {
+        font-size: 17px;
+    }
+
+    .feedback-smile img {
+        /* display: none; */
+    }
+
+    .feedback-user-img {
+
+        margin-top: 0px;
+    }
+
+    .success-check {
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .calendar-image {
+        margin-top: 25px;
+    }
+
+    .google-map {
+        margin-top: 20px;
+        /* text-align: center; */
+
+    }
+
+    .confirm-button {
+        margin-top: 30px;
+    }
+
+    .delivery-date {
+        margin-top: 20px;
+    }
+
+    .map-api {
+        margin-top: 30px;
+    }
+
+    .pin-text {
+        margin-top: 15px;
+    }
+
+    #log-carousel {
+        margin-top: 10px;
+    }
+
+    .logissue-description .header {
+        padding-top: 10px;
+    }
+
+    .default-header {
+        padding-top: 10px;
+
+    }
+
+    .schedule-repair-map-description .default-header {
+        padding-top: 10px;
+    }
+
+    .log-issue-page .carousel-indicators {
+        bottom: -60px;
+
+    }
+
+    .contact-live-chat {
+
+        margin-top: 0px !important;
+    }
+
+    .support-circle {
+        margin-top: 25px;
+    }
+
+
+    .help-centre-page #top-right-circle {
+        left: 203px;
+    }
+
+
+    .help-centre-page .text-logo p {
+
+        margin-top: 20px;
+
+    }
+
+    .support-chatbox-text {
+
+        height: calc(100% - 120px) !important;
+    }
+
+    .user-selection {
+        bottom: 2%;
+
+    }
+
+    .success-image {
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+    .success-image img {
+        height: 150px;
+    }
+
+    .feedback-header {
+        padding-top: 25px;
+    }
+
+
+}
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .payment-options {
+        overflow-y: scroll;
+    }
+
+    .accordian-container {
+        height: 375px !important;
+    }
+
+    .support-circle {
+        margin-top: 60px;
+    }
+
+    .support-chatbox-text {
+
+        height: 560px;
+    }
+
+    .pin-text {
+        margin-top: 50px;
+    }
+
+    .menu-item {
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+}
+
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+
+    .help-centre-page #top-right-circle {
+        left: 240px;
+    }
+
+    .support-chatbox-text {
+
+        height: calc(100% - 112px);
+    }
+
+}
+
+@media screen and (max-height: 700px) {
+
+    .register-form form input {
+        height: 40px;
+    }
+
+}
+
+/* Reg Form */
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    /* margin: 100px auto; */
+    padding: 15px;
+    /* width: 70%; */
+    min-width: 300px;
+}
+
+/* Style the input fields */
+#regForm input {
+    padding: 10px;
+    /* width: 100%; */
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+#regForm input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+#regForm .tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+#regForm .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+#regForm .step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+#regForm .step.finish {
+    background-color: #04AA6D;
+}
+
+body.modal-open> :not(.modal) {
+    filter: blur(0px);
+}
+
+.modal-backdrop.show {
+    opacity: 0 !important;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+/* Comission Portfolio Screen */
+
+.statuslevel-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.status-text{
+    width: 304px;
+    margin: auto;
+    font-weight: 400;
+}
+
+.completion-bar {
+    padding-bottom: 10px;
+}
+
+.comission-portfolio-totalsales {
+    margin-top: 40px;
+}
+
+.comission-portfolio-box {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    height: 136px;
+}
+
+.comission-star-box {
+    border-radius: 20px 20px 0px 20px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-goldstar {
+    margin-top: -25px;
+}
+
+.sales-header,
+.comissions-header {
+    color: #5FCFD4;
+}
+
+.status-heading-row,
+.category-table-heading {
+    border-bottom: 15px solid transparent;
+    border-radius: 5px;
+}
+
+.status-table-heading,
+.category-table-heading {
+    font-size: 15px;
+    color: #5FCFD4;
+}
+
+.status-row,
+.category-table-row {
+    border-radius: 5px;
+}
+
+.status-row td,
+.category-table-row td {
+    background: rgba(247, 247, 247, 0.5);
+    padding-bottom: 10px;
+    background-clip: padding-box;
+    border-bottom: 15px solid transparent;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.status-row td img {
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.team-column {
+    padding-right: 70px;
+}
+
+.graph-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.agent-level-text-bonuses{
+    font-size:20px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.badge-level-text-bonuses {
+    color: #F5922A;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.bonus-box {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0px 20px;
+    height: 136px;
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.bonus-box-header{
+    color: #5FCFD4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bonus-box-subheader-one{
+    color: #343D3A;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.bonus-box-subheader-two{
+    color: #343D3A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bonus-progress-bar{
+    padding-left: 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 380px){
+    .bonus-progress-bar img{
+    width: 280px;
+}
+}
